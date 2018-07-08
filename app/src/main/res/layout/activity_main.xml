@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nahed.pouyan.spam_collector.activities.MainActivity">
+
+    <com.nahed.pouyan.spam_collector.CustomTextView
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:gravity="right|center_vertical"
+        android:paddingRight="16dp"
+        android:text="@string/inbox"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize" />
+
+    <RelativeLayout
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lytPermission"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieAnim"
+                android:layout_width="match_parent"
+                android:layout_height="112dp" />
+
+            <com.nahed.pouyan.spam_collector.CustomTextView
+                android:textColor="@color/colorPrimaryDark"
+                android:text="دسترسی به صندوق پیام ها ندارم"
+                android:textSize="19sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            
+            <com.nahed.pouyan.spam_collector.CustomTextView
+                android:id="@+id/txtPermissionRequest"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/permission_request"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/button_background"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="126dp"
+                android:layout_height="42dp" />
+            
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lstMessages"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <com.github.jorgecastilloprz.FABProgressCircle
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="24dp"
+        android:id="@+id/fabProgressCircle"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:arcColor="@color/colorPrimary"
+        app:arcWidth="2dp"
+        app:finalIcon="@drawable/checked">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabUpload"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_upload"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:elevation="5dp" />
+
+    </com.github.jorgecastilloprz.FABProgressCircle>
+
+</android.support.constraint.ConstraintLayout>

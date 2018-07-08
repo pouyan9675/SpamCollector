@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">پیامک تبلیغاتی</string>
+    <string name="inbox">پیامک های دریافتی</string>
+    <string name="permission_request">اجازه میدم!</string>
+    <string name="permission_description">برای دسترسی و خواندن پیامک‌ها باید دسترسی به پیامک‌ها را فعال کنید. همچنین برای فیلتر بهتر و عدم نمایش پیامک‌های مخاطبین خود نیاز به دسترسی به مخاطبین میباشد.</string>
+    <string name="upload_successful">پیامک‌ها با موفقیت ارسال شدند. ممنون از شما!</string>
+    <string name="upload_failed">مشکل در ارسال اطلاعات :(</string>
+    <string name="permission_deny">نه اجازه نمیدم!</string>
+</resources>

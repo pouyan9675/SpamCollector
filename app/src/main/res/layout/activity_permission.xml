@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nahed.pouyan.spam_collector.activities.PermissionActivity">
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_key"
+                    android:layout_marginBottom="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp" />
+
+                <com.nahed.pouyan.spam_collector.CustomTextView
+                    android:layout_margin="16dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/permission_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.nahed.pouyan.spam_collector.CustomTextView
+                    android:id="@+id/txtPermissionRequest"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="@string/permission_request"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/button_background_light"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="126dp"
+                    android:layout_height="42dp" />
+
+        </LinearLayout>
+
+        <com.nahed.pouyan.spam_collector.CustomTextView
+            android:id="@+id/txtPermissionDeny"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="@string/permission_deny"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp" />
+        
+</RelativeLayout>
